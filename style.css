@@ -503,6 +503,10 @@ body::before {
     flex-direction: column;
     gap: 10px;
   }
+   .contact-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 
   .hero-content {
     flex-direction: column;
