@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanvi Khandelwal | Portfolio</title>
+  <link rel="icon" href="assests/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+  <script src="script.js" defer></script>
+</head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({ duration: 1000, once: true });
+  });
+</script>
+
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo"
+        style="display: flex; align-items: center; gap: 10px; font-family: 'Poppins', sans-serif; font-size: 28px;">
+        <span
+          style="padding: 8px 14px; background: linear-gradient(135deg, #6a82fb, #fc5c7d); border-radius: 12px; color: white; font-weight: 700; box-shadow: 0 0 10px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+          TK
+        </span>
+        <span style="font-weight: 600; color: #444;">Tanvi Khandelwal</span>
+      </h1>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <button id="darkToggle" class="dark-toggle">🌙</button>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero-section">
+    <video autoplay muted loop playsinline id="darkVideo">
+      <source src="assests/dark video.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content container">
+      <div class="social-links"
+        style="position: absolute; top: 50%; right: 30px; transform: translateY(-50%); display: flex; flex-direction: column; gap: 30px; ">
+        <a href="https://github.com/tanvikhandelwal27" target="_blank"><img src="assests/github.png" alt="GitHub"
+            style="width: 30px; height: 30px;" /></a>
+        <a href="https://www.linkedin.com/in/tanvi-khandelwal-7082a1291/" target="_blank"><img
+            src="assests/linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;" /></a>
+        <a href="mailto:tkhandelwal752@gmail.com"><img src="assests/mail.png" alt="Email"
+            style="width: 30px; height: 30px;" /></a>
+      </div>
+      <img src="assests/tanvi.jpg" alt="Tanvi" class="profile-img" />
+      <h2>Hi, I'm <span>Tanvi Khandelwal</span></h2>
+      <p>B.Tech CSE Student | Frontend Developer | AI Enthusiast</p>
+      <a href="#contact" class="btn-primary">Let's Connect</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p style="text-align: justify;">I’m a Computer Science Engineering student at Poornima College of Engineering,
+        specializing in frontend development and AI-driven web technologies. My core strength lies in designing
+        intuitive user experiences and building full-stack web applications that are both visually appealing and
+        functionally powerful.</p>
+      <p style="text-align: justify;">Throughout my academic journey, I've developed several projects that solve
+        real-world problems—from smart EV charging hardware systems to AI-based salary prediction apps. I'm continuously
+        exploring the latest technologies in web development, including React.js, Tailwind CSS, Node.js, and MongoDB. I
+        also have a strong command of C++ and have developed foundational programs like a phonebook manager and
+        calculator app.</p>
+      <p style="text-align: justify;">I enjoy collaborating with others, contributing to open-source projects, and
+        mentoring peers. I aspire to work on innovative tech that empowers users and drives meaningful impact. Beyond
+        coding, I’m passionate about design, photography, and exploring how AI can transform daily life.</p>
+      <a href="#projects" class="btn-primary">Explore My Work</a>
+      <a href="documents/tanvi_cv.pdf" class="btn-download" download>Download My Resume (PDF)</a>
+    </div>
+  </section>
+   <!-- Education Section -->
+<section id="education" class="section">
+  <div class="container">
+    <h2 >Education</h2>
+
+    <div class="timeline">
+      
+<div class="timeline-item">     
+     <div class="timeline-icon">🏫</div>
+        <div class="timeline-content">
+          <h3>Secondary Education</h3>
+          <p>Completed 10th grade from Tagore Vidya Bhawan School (RBSE) in 2021  with distinction.</p>
+        </div>
+      </div>
+
+<div class="timeline-item">     
+     <div class="timeline-icon">🎓</div>
+        <div class="timeline-content">
+          <h3>Senior Secondary</h3>
+          <p>Completed 12th (PCM) from Tagore Vidya Bhawan School in 2023, RBSE board.</p>
+        </div>
+      </div>
+
+<div class="timeline-item">
+          <div class="timeline-icon">💻</div>
+        <div class="timeline-content">
+          <h3>B.Tech in Computer Science</h3>
+          <p>Currently pursuing B.Tech from Poornima College of Engineering. Expected graduation: 2027.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" onclick="openModal('modal1')">
+          <img src="assests/salray.png" alt="Salary Predictor">
+          <h3>Salary Predictor</h3>
+          <p>ML-based app to predict salaries based on skills and experience.</p>
+        </div>
+        <div class="project-card" onclick="openModal('modal2')">
+          <img src="assests/portfolio.png" alt="Portfolio Website">
+          <h3>Portfolio Website</h3>
+          <p>Responsive personal portfolio website with dark mode and animation.</p>
+        </div>
+        <div class="project-card" onclick="openModal('modal3')">
+          <img src="assests/phonebook.png" alt="Phonebook App">
+          <h3>Phonebook App (C++)</h3>
+          <p>Console-based contact manager using C++ and file handling.</p>
+        </div>
+        <div class="project-card" onclick="openModal('modal4')">
+          <img src="assests/calculator.png" alt="Calculator">
+          <h3>Calculator</h3>
+          <p>Simple calculator app with keyboard support and responsive UI.</p>
+        </div>
+        <div class="project-card" onclick="openModal('modal5')">
+          <img src="assests/ev.png" alt="Smart EV Charging">
+          <h3>Smart EV Charging System</h3>
+          <p>Hardware-based smart EV charging system using microcontrollers.</p>
+        </div>
+        <div class="project-card" onclick="openModal('modal6')">
+          <img src="assests/placementor.png" alt="PlaceMentor">
+          <h3>PLACEMENTOR</h3>
+          <p>AI-powered platform for career guidance, resume analysis, and mentorship.</p>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+          <h3>Salary Predictor</h3>
+          <img src="assests/salray.png" alt="" />
+          <p>Predict salaries based on inputs like skillset, experience, and location using machine learning. Integrated
+            with MongoDB, Node.js, and Flask model API.</p>
+          <a href="https://github.com/your-username/salary-predictor" target="_blank" class="btn-download">View
+            GitHub</a>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+          <h3>Portfolio Website</h3>
+          <img src="assests/portfolio.png" alt="" />
+          <p>Fully responsive React-based portfolio with animations, dark/light theme, and tech stack visualizations.
+          </p>
+          <a href="https://github.com/your-username/salary-predictor" target="_blank" class="btn-download">Go Live </a>
+        </div>
+      </div>
+
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+          <h3>Phonebook App (C++)</h3>
+          <img src="assests/phonebook.png" alt="" />
+          <p>A console-based phonebook system with add/search/edit/delete contact options using file handling in C++.
+          </p>
+          <a href="https://github.com/Tanvikhandelwal27/PhoneBook.cpp" target="_blank" class="btn-download">View
+            GitHub</a>
+        </div>
+      </div>
+
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+          <h3>Calculator</h3>
+          <img src="assests/calculator.png" alt="" />
+          <p>A responsive and interactive calculator web app that supports all basic arithmetic operations. It offers a
+            clean user interface and keyboard-friendly input, ideal for quick calculations.</p>
+          <a href="https://github.com/Tanvikhandelwal27/calculater-using-HTML-CSS-JS" target="_blank"
+            class="btn-download">View GitHub</a>
+        </div>
+      </div>
+
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal('modal5')">&times;</span>
+          <h3>Smart EV Charging System</h3>
+          <img src="assests/ev.png" alt="" />
+          <p>Hardware project with microcontroller-based control of EV charging logic including safety, display, and
+            power management.</p>
+          <a href="documents/EV research paper .docx" target="_blank" class="btn-download">Research Paper</a>
+        </div>
+      </div>
+
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal('modal6')">&times;</span>
+          <h3>PLACEMENTOR</h3>
+          <img src="assests/placementor.png" alt="" />
+          <p>Full-stack AI platform offering resume analysis, salary prediction, mentorship video calls, and
+            personalized dashboards using Node.js, MongoDB, and ML models.</p>
+          <a href=https://github.com/Tanvikhandelwal27/PLACEMENTOR-A-personalised-AI-system-for-your-professional-career-
+            target="_blank" class="btn-download">View GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills & Technologies</h2>
+      <div class="tech-logos">
+        <div class="tech-item"><img src="assests/html.png" alt="HTML" /><span>HTML</span></div>
+        <div class="tech-item"><img src="assests/css.png" alt="CSS" /><span>CSS</span></div>
+        <div class="tech-item"><img src="assests/js.png" alt="JS" /><span>JavaScript</span></div>
+        <div class="tech-item"><img src="assests/reactjs.png" alt="React" /><span>React</span></div>
+        <div class="tech-item"><img src="assests/nodejs.png" alt="Node" /><span>Node.js</span></div>
+        <div class="tech-item"><img src="assests/mongodb.png" alt="MongoDB" /><span>MongoDB</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+
+      <form action="https://formsubmit.co/tkhandelwal752@gmail.com" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <!-- Hidden Inputs -->
+        <input type="hidden" name="_subject" value="New Message from Portfolio!" />
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit" class="contact-form button ">Send Message</button>
+      </form>
+      <p style="text-align: center; padding-top: 50px;">You can reach me through the following platforms:</p>
+      <ul class="contact-links">
+        <li><a href="mailto:tkhandelwal752@gmail.com" target="_blank">📧 Email: tkhandelwal752@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/tanvi-khandelwal-7082a1291/" target="_blank">🔗 LinkedIn</a></li>
+        <li><a href="https://github.com/tanvikhandelwal27" target="_blank">💻 GitHub</a></li>
+        <li><a href="https://www.instagram.com/tanvi.khandelwal_2776/" target="_blank">📸 Instagram</a></li>
+        <!-- <li><a href="https://twitter.com/tanvikhandelwal" target="_blank">🐦 Twitter</a></li> -->
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Tanvi Khandelwal. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
